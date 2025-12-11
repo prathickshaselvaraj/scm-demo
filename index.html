@@ -1,44 +1,85 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Prathicksha — My Hobbies</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+# SCM Demo — Source Control Management Workflow
 
-  <header>
-    <h1>My Hobbies</h1>
-    <p class="subtitle">A quick snapshot of what keeps me inspired.</p>
-  </header>
+A streamlined demonstration of modern Git-based source control workflows, including branching strategy, feature isolation, pull request lifecycle, and integration best practices. This repository models a practical, production-aligned Git workflow used in collaborative engineering teams.
 
-  <section class="hobby-container">
+## Project Overview
 
-    <div class="card">
-      <h2>📚 Reading</h2>
-      <p>I enjoy exploring fiction, biographies, and self-growth books.</p>
-    </div>
+This project illustrates how a real software team manages code changes through:
 
-    <div class="card">
-      <h2>🎨 Drawing</h2>
-      <p>I express ideas through sketches and digital illustrations.</p>
-    </div>
+- Feature branching
+- Pull Request (PR) review pipelines
+- Code isolation and conflict prevention
+- Clean commit hygiene
+- GitHub-based development lifecycle
 
-    <div class="card">
-      <h2>🎧 Music</h2>
-      <p>Listening to calm, lo-fi, and soft melodies helps me focus.</p>
-    </div>
+It serves as a reference implementation for understanding Git fundamentals in a structured, industry-grade manner.
 
-    <div class="card">
-      <h2>🧘 Yoga</h2>
-      <p>Practicing mindfulness and staying mentally balanced.</p>
-    </div>
+## Repository Structure
 
-  </section>
+scm-demo/
+├── src/                 # Project source code
+├── feature/             # Branch-specific feature work
+├── docs/                # Documentation & workflow notes
+└── README.md            # This file
 
-  <footer>
-    <p>© 2025 Prathicksha — Hobbies Showcase</p>
-  </footer>
+(Structure may evolve as functionality grows.)
 
-</body>
-</html>
+## Tech Stack
+
+- Git (version control)
+- GitHub (remote hosting and PR workflow)
+- Optional integrations:
+  - GitHub Actions
+  - CodeQL scanning
+  - GitHub Project Boards
+
+## Workflow Summary
+
+### 1. Create a Feature Branch
+git checkout -b feature/<feature-name>
+
+
+### 2. Commit Frequently
+
+
+git add .
+git commit -m "Add UI layout for hobbies section"
+
+
+### 3. Push to GitHub
+
+
+git push -u origin feature/<feature-name>
+
+
+### 4. Raise a Pull Request
+- Compare against `main`
+- Add clear title and description
+- Request review before merging
+
+### 5. Merge After Approval
+Ensures clean, validated development and predictable integration.
+
+## Current Feature Example
+
+**feature/hobbies-ui**
+- Adds structured UI for user hobby details
+- Demonstrates incremental UI development via branching
+- Serves as a hands-on PR example
+
+## Future Enhancements
+
+- Add GitHub Actions CI
+- Introduce automated linting/formatting
+- Add unit tests for logic
+- Expand modular components inside `src/`
+
+## Maintainer
+
+Prathicksha S  
+Software Engineering Student  
+Focused on mastering Git workflows and modern development practices.
+
+## License
+
+Open for learning and demonstration. No formal license applied yet.
